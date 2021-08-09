@@ -51,13 +51,6 @@ fn main() {
     println!("{}", config_hex(&buf2, cfg));
     fontprinter(&buf2, 8);
 
-    let off = match fontx.get_sjis_offset('ツ') {
-        Ok(x) => x,
-        Err(_) => panic!("Failed to render font!"),
-    };
-
-    println!("{}", off);
-
     match fontx.render('ツ', &mut buf) {
         Ok(_) => {},
         Err(_) => panic!("Failed to render font!"),
