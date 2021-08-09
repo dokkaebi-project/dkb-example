@@ -1,0 +1,3 @@
+[submodule "font-archive"]
+	path = font-archive
+	url = git@github.com:dokkaebi-project/font-archive.git
