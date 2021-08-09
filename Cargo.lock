@@ -3,15 +3,33 @@
 version = 3
 
 [[package]]
-name = "bitmapfont-rs"
-version = "0.1.0"
+name = "cfg-if"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
 name = "dkb-example"
 version = "0.1.0"
 dependencies = [
- "bitmapfont-rs",
+ "dkb-rs",
  "pretty-hex",
+]
+
+[[package]]
+name = "dkb-rs"
+version = "0.0.1-alpha"
+dependencies = [
+ "encoding_rs",
+]
+
+[[package]]
+name = "encoding_rs"
+version = "0.8.28"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "80df024fbc5ac80f87dfef0d9f5209a252f2a497f7f42944cff24d8253cac065"
+dependencies = [
+ "cfg-if",
 ]
 
 [[package]]
